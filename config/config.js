@@ -1,6 +1,7 @@
 // Since one of our properties needs to be snake cased,
 // we can disable the linting for that specific scenario
 // and line so that the build doesn't fail for a lint error
+var JAWSDB_URL = process.env.JAWSDB ? JAWSDB_URL : "";
 
 module.exports = {
   development: {
@@ -22,6 +23,6 @@ module.exports = {
   production: {
     /* eslint-disable-next-line camelcase */
     use_env_variable: JAWSDB_URL,
-    dialect: mysql
+    dialect: "mysql"
   }
 };
