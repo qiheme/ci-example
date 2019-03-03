@@ -19,7 +19,7 @@ module.exports = {
     logging: false
   },
   production: {
-    /* 
+    /*
      * Since one of our properties needs to be snake cased,
      * we can disable the linting for that specific scenario
      * and line so that the build doesn't fail for a lint error
