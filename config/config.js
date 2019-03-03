@@ -1,6 +1,4 @@
-// Since one of our properties needs to be snake cased,
-// we can disable the linting for that specific scenario
-// and line so that the build doesn't fail for a lint error
+// This allows the whole config to be loaded even though we're not using it in production
 var JAWSDB_URL = process.env.JAWSDB ? JAWSDB_URL : "";
 
 module.exports = {
@@ -21,6 +19,11 @@ module.exports = {
     logging: false
   },
   production: {
+    /* 
+     * Since one of our properties needs to be snake cased,
+     * we can disable the linting for that specific scenario
+     * and line so that the build doesn't fail for a lint error
+     */
     /* eslint-disable-next-line camelcase */
     use_env_variable: JAWSDB_URL,
     dialect: "mysql"
