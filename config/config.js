@@ -25,7 +25,7 @@ module.exports = {
     username: process.env.PROD_DB_USERNAME,
     password: process.env.PROD_DB_PASSWORD,
     database: process.env.PROD_DB_DATABASE,
-    host: process.env.PROD_JAWSDB_URL,
+    host: process.env.PROD_DB_HOST,
     dialect: "mysql"
   }
 };
